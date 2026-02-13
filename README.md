@@ -6,21 +6,21 @@ An MCP (Model Context Protocol) server that scaffolds Flutter projects from your
 
 Exposes three tools to AI agents:
 
-| Tool | Description |
-|---|---|
+| Tool                     | Description                                                                            |
+| ------------------------ | -------------------------------------------------------------------------------------- |
 | `create_flutter_project` | Full 7-step project setup (clone template → git init → deps → l10n → flavors → config) |
-| `list_flutter_projects` | Scan a directory for Flutter projects |
-| `get_project_info` | Read pubspec, config, git status of an existing project |
+| `list_flutter_projects`  | Scan a directory for Flutter projects                                                  |
+| `get_project_info`       | Read pubspec, config, git status of an existing project                                |
 
 ### `create_flutter_project` parameters
 
-| Parameter | Required | Description |
-|---|---|---|
-| `name` | ✅ | Dart package name (e.g. `telecom_app_enterprise`) |
-| `org` | ✅ | Reverse-domain org (e.g. `mu.mt`) |
-| `template` | | Template repo URL (defaults to your Bitbucket template) |
-| `dir` | | Parent directory (defaults to cwd) |
-| `dry_run` | | Preview without executing |
+| Parameter  | Required | Description                                             |
+| ---------- | -------- | ------------------------------------------------------- |
+| `name`     | ✅       | Dart package name (e.g. `telecom_app_enterprise`)       |
+| `org`      | ✅       | Reverse-domain org (e.g. `mu.mt`)                       |
+| `template` |          | Template repo URL (defaults to your Bitbucket template) |
+| `dir`      |          | Parent directory (defaults to cwd)                      |
+| `dry_run`  |          | Preview without executing                               |
 
 ## Prerequisites
 
