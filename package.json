@@ -1,0 +1,31 @@
+{
+  "name": "@stephangopaul/mtdevkit",
+  "version": "1.0.0",
+  "description": "MCP server to scaffold Flutter projects from a custom clean architecture template",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "bin": {
+    "MTDevKit": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephangopaul/MTDevKit.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
+}
